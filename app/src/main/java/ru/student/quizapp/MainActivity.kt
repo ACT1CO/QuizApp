@@ -10,7 +10,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Открываем экран викторины после нажатия кнопки
         val startButton = findViewById<Button>(R.id.btnStart)
         startButton.setOnClickListener {
             startActivity(Intent(this, QuizActivity::class.java))
